@@ -26,8 +26,8 @@ function Offersection(props) {
       <p className="text-primary">Adaptive Digital Platform</p>
       </div>
         <div className="col-md-12">
-        <div className="gt_testi2_wrap">
-          <p>Swa-adhyayan is the most powerful adaptive
+        <div className="gt_testi3_wrap" style={{backgroundColor:'transparent'}}>
+          <p style={{color:'white'}}>Swa-adhyayan is the most powerful adaptive
 and comprehensive E-learning, assessment
 and sharing platform ever for students
 to identify their learning style and building

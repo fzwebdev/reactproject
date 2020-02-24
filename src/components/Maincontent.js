@@ -5,6 +5,7 @@ import Homegallery from './Homegallery';
 import Testimonial from './Testimonial';
 import Newsandblog from './Newsandblog';
 function Maincontent() {
+  
   const posts = [
     {
       id: 1, 
@@ -192,6 +193,7 @@ function Maincontent() {
     },
     
   ];
+  
   return (
     <div className="gt_main_content_wrap">
       {/* <!--Offer Wrap start--> */}
@@ -201,10 +203,11 @@ function Maincontent() {
         <Homegallery posts={gallery}/>
         <Testimonial posts={testimonial}/>
         <Newsandblog posts={testimonial}/>
-      <div className="back-to-top">
-        <a href="#home"><i className="fa fa-angle-up"></i></a>
-      </div>  
+        <div className="back-to-top">
+          <a href="#home"><i className="fa fa-angle-up"></i></a>
+        </div>  
     </div>
   );
 }
+
 export default Maincontent;

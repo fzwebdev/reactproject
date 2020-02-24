@@ -67,7 +67,7 @@ function Header() {
                                 <li><a href="https://foreverbooks.co.in/" target="_blank">Forever Books</a></li>
                             </ul>
                         </li>
-                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><NavLink to="/contact-us" activeClassName="active">Contact Us</NavLink></li>
                     </ul>
                 </nav>
             </div>
