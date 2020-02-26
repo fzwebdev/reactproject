@@ -696,3 +696,8 @@ ul.gt_product_ui_element li a i,
     background: #ED1C2A;
     color: #ffffff;
 }
+
+.invalid{
+	color: rgb(220, 53, 69);
+	border-color:	rgb(220, 53, 69);
+}
