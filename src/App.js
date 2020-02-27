@@ -10,7 +10,7 @@ import Contactus from './pages/Contactus';
 function App() {
     return ( 
         <BrowserRouter>
-            <div class="gt_wrapper"> 
+            <div className="gt_wrapper"> 
                 <Header/>
                 <Switch>
                     <Route path="/" exact component={Home} />  

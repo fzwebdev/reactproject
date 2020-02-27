@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios';
+
 const emailRegex = RegExp(
   /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
 );
@@ -9,7 +10,8 @@ const mobileRegex = /(7|8|9)\d{9}/;
 
 const formValid = ({ formErrors, ...rest }) => {
   let valid = true;
-
+  console.log(Object.values(rest));
+  
   // validate form errors being empty
   Object.values(formErrors).forEach(val => {
     val.length > 0 && (valid = false);
@@ -29,10 +31,10 @@ class Contactform extends Component{
     super(props);
 
     this.state = {
-      fullname: null,
-      mobile: null,
-      email: null,
-      message: null,
+      fullname: '',
+      mobile: '',
+      email: '',
+      message: '',
       formErrors: {
         fullname: "",
         mobile: "",
@@ -47,7 +49,9 @@ class Contactform extends Component{
     e.preventDefault();
     const { name, value } = e.target;
     let formErrors = { ...this.state.formErrors };
-
+    this.setState({
+      responseData : [],
+    })
     switch (name) {
       case "fullname":
         formErrors.fullname =
@@ -87,13 +91,19 @@ class Contactform extends Component{
         mobile : this.state.mobile,
         message : this.state.message,
       };
-      const options = {
-        headers: {'Access-Control-Allow-Origin': 'swaadhyayan.net/swaadhyayan/'}
-      };
+      // const options = {
+      //   headers: {'Access-Control-Allow-Origin': 'swaadhyayan.net/swaadhyayan/'}
+      // };
       axios.post('http://localhost/swabackend/index.php/functions/saveFeedback', postData)
       .then((response) => {
         this.setState({responseData: response.data});
         console.log(response.data[0].result);
+        this.setState({
+          fullname: '',
+          mobile: '',
+          email: '',
+          message: '',
+        });
       }, (error) => {
         console.log(error);
       });
@@ -102,26 +112,35 @@ class Contactform extends Component{
     }
   };
 
-  
-
-
   render(){
     const { formErrors } = this.state;
     return(
-      <div className="gt_form_map">
-        <div className="gt_hdg_1">
-          <h3>Send Us a Message</h3>
-          <p>{this.responseData}</p>
+      <div className="contact-form">
+        <div className="row">
+          <div className="col-md-12 text-center Cheading">
+            <h3>Send Us a Message</h3>
+          </div>
+        <div className="col-md-4">
+          <div className="contact1-pic js-tilt cphoto text-center" data-tilt="">
+            <img src="./assets/images/img-01.png" alt="" className='img-thumbnail'/>
+          </div>
         </div>
-
-        <form className="gt_contact_form" id="contact-form" onSubmit={this.handleSubmit} method="post">
+        <div className="col-md-8">
+        
+        {this.state.responseData.length > 0 && (  
+          <div className="alert alert-success">
+          {this.state.responseData.map(responseData => <strong>{responseData.message}</strong>)}
+        </div>
+        )}
+        
+        <form id="contact-form" onSubmit={this.handleSubmit} method="post">
           <div className="col-md-4">
             <div className="form-group">
               <label>Full name</label>
               <input type="text" className={`form-control ${formErrors.fullname.length > 0 ? "invalid" : ''}`} value={this.state.fullname}
                 onChange={this.handleChange} name="fullname" required />
               {formErrors.fullname.length > 0 && (
-                <small class="form-text invalid">{formErrors.fullname}</small> 
+                <small className="form-text invalid">{formErrors.fullname}</small> 
               )}
             </div>
           </div>
@@ -131,7 +150,7 @@ class Contactform extends Component{
               <input type="email" className={`form-control ${formErrors.email.length > 0 ? "invalid" : ''}`} value={this.state.email}
                 onChange={this.handleChange} name="email" required />
               {formErrors.email.length > 0 && (
-                <small class="form-text invalid">{formErrors.email}</small> 
+                <small className="form-text invalid">{formErrors.email}</small> 
               )}
             </div>
           </div>
@@ -141,7 +160,7 @@ class Contactform extends Component{
               <input type="text" className={`form-control  ${formErrors.mobile.length > 0 ? "invalid" : ''}`} value={this.state.mobile}
                 onChange={this.handleChange} name="mobile" required />
               {formErrors.mobile.length > 0 && (
-                <small class="form-text invalid">{formErrors.mobile}</small> 
+                <small className="form-text invalid">{formErrors.mobile}</small> 
               )}
             </div>
           </div>
@@ -151,7 +170,7 @@ class Contactform extends Component{
               <textarea className={`form-control ${formErrors.message.length > 0 ? "invalid" : ''}`} value={this.state.message}
                 onChange={this.handleChange} name="message" required rows="3"></textarea>
               {formErrors.message.length > 0 && (
-                <small class="form-text invalid">{formErrors.message}</small> 
+                <small className="form-text invalid">{formErrors.message}</small> 
               )}
             </div>
           </div>
@@ -162,6 +181,8 @@ class Contactform extends Component{
             <div id="contact-result"></div>
           </div>
         </form>
+        </div>
+        </div>
       </div>
     )
   }

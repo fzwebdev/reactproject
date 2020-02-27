@@ -701,3 +701,7 @@ ul.gt_product_ui_element li a i,
 	color: rgb(220, 53, 69);
 	border-color:	rgb(220, 53, 69);
 }
+
+.gt_contact_us_map{
+	background: -moz-linear-gradient(left,rgb(0, 114, 255),rgb(0, 198, 255));
+}
