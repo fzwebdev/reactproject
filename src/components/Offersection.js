@@ -4,7 +4,7 @@ function Offersection(props) {
   const content = props.posts.map((post) =>
     <div key={post.id} className="col-md-4 col-sm-6">
       <div className="gt_wht_offer_wrap mb">
-        <i className={`icon-meat}`}>
+        <i className="">
           <img src={`./assets/images/${post.iconName}`} style={{width:'90px'}} alt="" />
         </i>
         <div className="gt_wht_offer_des">

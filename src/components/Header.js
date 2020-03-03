@@ -16,8 +16,8 @@ function Header() {
                 </div>
                 <div className="gt_hdr_3_ui_element">
                     <ul>
-                        <li><i className="fa fa-phone"></i>+124 456 7858</li>
-                        <li><i className="fa fa-envelope-o"></i><a href="#">info@kidscenter.com</a></li>
+                        <li><i className="fa fa-phone"></i>011 - 43585858</li>
+                        <li><i className="fa fa-envelope-o"></i><a href="#">info@swaadhyayan.com</a></li>
                     </ul>
                 </div>
                 {/* <div className="gt_hdr3_search">
@@ -42,23 +42,22 @@ function Header() {
                     </a>   
                     {/* <!-- Responsive Buttun --> */}
                     <ul className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <li> <NavLink to="/" exact >Home</NavLink>
-                        </li>
+                        <li> <NavLink to="/" exact >Home</NavLink></li>
                         <li> <NavLink to="/about-us" activeClassName="active">About Us</NavLink></li>
-                        <li><a href="javascript:avoid(0);">Solution</a>
-                            <ul>
+                        <li><NavLink to="/solution" activeClassName="active">Solution</NavLink>
+                            {/* <ul>
                                 <li><a href="course-grid-style-01-with-sidebar.html">Swa-Learn</a></li>
                                 <li><a href="course-grid-style-01-without-sidebar.html">Swa-Assess</a></li>
                                 <li><a href="course-grid-style-02-with-sidebar.html">Swa-Share</a></li>
                                 <li><a href="course-grid-style-02-without-sidebar.html">Sept</a></li>
-                            </ul>
+                            </ul> */}
                         </li>
-                        <li><a href="javascript:avoid(0);">Gallery</a>
+                        {/* <li><a href="javascript:avoid(0);">Gallery</a>
                             <ul>
                                 <li><a href="event.html">Event List</a></li>
                                 <li><a href="event-detail.html">Event Detail</a></li>
                             </ul>
-                        </li>
+                        </li> */}
                         <li><a href="javascript:avoid(0);">Login</a>
                             <ul>
                                 <li><a href="http://www.swaadhyayan.com/lms" target="_blank">Swa-Adhyayan LMS</a></li>

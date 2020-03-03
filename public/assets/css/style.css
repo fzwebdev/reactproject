@@ -3620,8 +3620,31 @@ ul.gt_rating_start li a{
 		   Sub Banner CSS
 	  ==============================================================
 */
+#teamSection{
+	background-color: #008dd2;
+}
+#teamSection p{
+	color: #4d4747;
+}
+#teamSection .card{
+	background-color:#fff;
+	border-radius: 10px;
+	padding: 10px;
+}
+#teamSection .card .card-body img {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+}
+
 .gt_sub_banner_bg{
-	background-image: url(images/sub-banner-bg.jpg);
+	/* background-image: url(../images/sub-banner-bg.jpg); */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.aboutus_banner{
+	background-image: url(../images/sub-banner-bg.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
