@@ -28,6 +28,9 @@ $(document).ready(function(){
 	$('.gt_popup_remove i').on('click' , function(){
 		$('.gt_popup_wrap').removeClass('active');
 	});
+
+	AOS.init();
+
 	/*
 	  ==============================================================
 		   Search Bar Script

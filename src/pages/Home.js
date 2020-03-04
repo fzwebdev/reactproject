@@ -9,6 +9,7 @@ import Maincontent from "../components/Maincontent";
 class Home extends Component {
     componentWillMount() {
         loadjs('../assets/js/custom.js');
+        loadjs('../assets/css/aos/aos.js');
         // loadjs('/static/js/scripts.js', function() {
         // })
       }

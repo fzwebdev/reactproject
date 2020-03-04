@@ -44,7 +44,7 @@ function Header() {
                     <ul className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <li> <NavLink to="/" exact >Home</NavLink></li>
                         <li> <NavLink to="/about-us" activeClassName="active">About Us</NavLink></li>
-                        <li><NavLink to="/solution" activeClassName="active">Solution</NavLink>
+                        <li><NavLink to="/services" activeClassName="active">Services</NavLink>
                             {/* <ul>
                                 <li><a href="course-grid-style-01-with-sidebar.html">Swa-Learn</a></li>
                                 <li><a href="course-grid-style-01-without-sidebar.html">Swa-Assess</a></li>
@@ -52,21 +52,22 @@ function Header() {
                                 <li><a href="course-grid-style-02-without-sidebar.html">Sept</a></li>
                             </ul> */}
                         </li>
+                        <li><NavLink to="/contact-us" activeClassName="active">Contact Us</NavLink></li>
                         {/* <li><a href="javascript:avoid(0);">Gallery</a>
                             <ul>
                                 <li><a href="event.html">Event List</a></li>
                                 <li><a href="event-detail.html">Event Detail</a></li>
                             </ul>
                         </li> */}
-                        <li><a href="javascript:avoid(0);">Login</a>
-                            <ul>
+                        <li><a href="https://www.swaadhyayan.com/lms" target="_blank">Login</a>
+                            {/* <ul>
                                 <li><a href="http://www.swaadhyayan.com/lms" target="_blank">Swa-Adhyayan LMS</a></li>
                                 <li><a>Biometric</a></li>
                                 <li><a href="https://www.swaadhyayan.com/psychometric/login" target="_blank">Psychometric</a></li>
                                 <li><a href="https://foreverbooks.co.in/" target="_blank">Forever Books</a></li>
-                            </ul>
+                            </ul> */}
                         </li>
-                        <li><NavLink to="/contact-us" activeClassName="active">Contact Us</NavLink></li>
+                        
                     </ul>
                 </nav>
             </div>

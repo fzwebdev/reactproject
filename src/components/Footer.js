@@ -47,8 +47,8 @@ function Footer() {
                       <ul className="gt_team1_contact_info">
                         <li> <NavLink to="/about-us" >About Us</NavLink></li>
                         <li> <NavLink to="/blogs" >Blogs</NavLink> </li>
-                        <li> <NavLink to="/careers" >Careers</NavLink> </li>
                         <li> <NavLink to="/faq" >FaQ</NavLink> </li>
+                        <li><a href="https://foreverbooks.co.in/" target="_blank">Forever Books</a></li>
                       </ul>
                     </div>
                   </div>
