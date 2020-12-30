@@ -33,10 +33,10 @@ function Aboutus() {
                 <div className="row">
                   <div className="col-md-8">
                     <div className="gt_about_wrap">
-                      <h4 data-aos="fade-right" className="title" style={{color: '#ED1C24'}}>Welcome To Swaadhyayan</h4>
-                      <p data-aos="fade-right" style={{color: '#434348'}}> Swa-adhyayan is the most powerful adaptive and comprehensive E-learning, assessment and sharing platform ever for students to identify their learning style and building their progressive proficiency. Activities and assessments on this Digital Platform are mapped to the latest curriculum which make the learning process more effective and adaptive. The assessment for kindergarten to class 8 generates multiple reports and the progress card of the child depicting various parameters. It enables all the users to share useful resources and learning outcomes which are beneficial to interaction between the school and the child. </p>
-                      <h4 data-aos="fade-left"  className="title" style={{color: '#ED1C24'}}>Why Swa-adhyayan?</h4>
-                      <p data-aos="fade-left" style={{color: '#434348'}}>Swa-adhyayan enables students to identify their learning style and proficiency profile along with their scholastic and co-scholastic areas of opportunity. The platform engages learners from kindergarten to class 8 entailing a series of activities and assessments based on Nobel Prize-winning concept of Multiple Intelligences which helps in building the progressive proficiency of the child. Multiple Intelligences help identify the most suitable stream selection and career choice for the user.</p>
+                      <h4 data-aos="fade-right" className="title" style={{color: '#ED1C24'}}>Welcome To Swa-Adhyayan</h4>
+                      <p data-aos="fade-right" style={{color: '#434348'}}> Swa-Adhyayan is the most powerful adaptive and comprehensive E-learning, assessment and sharing platform ever for students to identify their learning style and building their progressive proficiency. Activities and assessments on this Digital Platform are mapped to the latest curriculum which makes the learning process more effective and adaptive. The assessment for kindergarten to class 8 generates multiple reports and the progress card of the child depicting various parameters. It enables all the users to share useful resources and learning outcomes which are beneficial to interaction between the school and the child. </p>
+                      <h4 data-aos="fade-left"  className="title" style={{color: '#ED1C24'}}>Why Swa-Adhyayan?</h4>
+                      <p data-aos="fade-left" style={{color: '#434348'}}>Swa-Adhyayan enables students to identify their learning style and proficiency profile along with their scholastic and co-scholastic areas of opportunity. The platform engages learners from kindergarten to class 8 entailing a series of activities and assessments based on Nobel Prize-winning concept of Multiple Intelligences which helps in building the progressive proficiency of the child. Multiple Intelligences help identify the most suitable stream selection and career choice for the user.</p>
                     </div>
                   </div>
                   <div className="col-md-4" data-aos="flip-left">
@@ -46,7 +46,7 @@ function Aboutus() {
                   </div>
                   <div className="col-md-12" data-aos="fade-down-left">
                     <h4 className="title" style={{color: '#ED1C24'}}>Nobody is Left Behind </h4>
-                    <p style={{color: '#434348'}}>The basic aim of education is to include all the persons involved in it. The learning suggestions and the learning outcomes of Swa-adhyayan define roles and responsibilities for the continuous evaluation of the learners. It engages pre-learning diagnosis followed by learning suggestions and learning outcomes there by upholding the fundamental right of every learner to have quality education.</p>
+                    <p style={{color: '#434348'}}>The basic aim of education is to include all the persons involved in it. The learning suggestions and the learning outcomes of Swa-Adhyayan define roles and responsibilities for the continuous evaluation of the learners. It engages pre-learning diagnosis followed by learning suggestions and learning outcomes there by upholding the fundamental right of every learner to have quality education.</p>
                   </div>
                 </div>
               </div>

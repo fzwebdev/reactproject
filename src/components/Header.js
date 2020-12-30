@@ -8,10 +8,12 @@ function Header() {
             <div className="container">
                 <div className="gt_top3_scl_icon">
                     <ul className="gt_hdr3_scl_icon">
-                        <li><a href="https://www.facebook.com/"><i className="fa fa-facebook"></i></a></li>
-                        <li><a href="https://www.twitter.com/"><i className="fa fa-twitter"></i></a></li>
-                        <li><a href="https://www.youtube.com/"><i className="fa fa-youtube"></i></a></li>
-                        <li><a href="https://www.linkedin.com/"><i className="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.facebook.com/info.swaadhyayan/" target='_blank'><i className="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/swaadhyayan/" target='_blank'><i className="fa fa-twitter"></i></a></li>
+                        {/* <li><a href="#"><i className="fa fa-google-plus"></i></a></li> */}
+                        <li><a href="https://www.instagram.com/swaadhyayan/" target='_blank'><i className="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/swaadhyayan/" target='_blank'><i className="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCdboYQZwOQvTUeehZ0haNyQ" target='_blank'><i className="fa fa-youtube"></i></a></li>
                     </ul>
                 </div>
                 <div className="gt_hdr_3_ui_element">
@@ -53,20 +55,20 @@ function Header() {
                             </ul> */}
                         </li>
                         <li><NavLink to="/contact-us" activeClassName="active">Contact Us</NavLink></li>
-                        {/* <li><a href="javascript:avoid(0);">Gallery</a>
+                        <li><a href="javascript:avoid(0);">Login</a>
                             <ul>
-                                <li><a href="event.html">Event List</a></li>
-                                <li><a href="event-detail.html">Event Detail</a></li>
+                                <li><a href="https://www.lms.swaadhyayan.net" target="_blank">For Registered Schools</a></li>
+                                <li><a href="https://www.swaadhyayan.com/lms" target="_blank">Others</a></li>
                             </ul>
-                        </li> */}
-                        <li><a href="https://www.swaadhyayan.com/lms" target="_blank">Login</a>
+                        </li>
+                        {/* <li><a href="https://www.swaadhyayan.com/lms" target="_blank">Login</a> */}
                             {/* <ul>
-                                <li><a href="http://www.swaadhyayan.com/lms" target="_blank">Swa-Adhyayan LMS</a></li>
+                                <li><a href="http://www.swaadhyayan.com/lms" target="_blank">For Others</a></li>
                                 <li><a>Biometric</a></li>
                                 <li><a href="https://www.swaadhyayan.com/psychometric/login" target="_blank">Psychometric</a></li>
                                 <li><a href="https://foreverbooks.co.in/" target="_blank">Forever Books</a></li>
                             </ul> */}
-                        </li>
+                        {/* </li> */}
                         
                     </ul>
                 </nav>

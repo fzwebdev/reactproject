@@ -28,7 +28,7 @@ function Services() {
                   <img src="./assets/images/services-1.PNG" alt="..." />
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title"><a href="">For Student</a></h5>
+                  <h5 class="card-title">For Student</h5>
                   <p class="card-text">
                   <ul>
                     <li><i class="fa fa-check-circle" aria-hidden="true"></i> SEPT</li>
@@ -47,7 +47,7 @@ function Services() {
                   <img src="./assets/images/services-3.PNG" alt="..." />
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title"><a href="">For Parent</a></h5>
+                  <h5 class="card-title">For Parent</h5>
                   <p class="card-text">
                     <ul>
                       <li><i class="fa fa-check-circle" aria-hidden="true"></i> Student Report</li>
@@ -66,7 +66,7 @@ function Services() {
                   <img src="./assets/images/services-2.PNG" alt="..." />
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title"><a href="">For Teacher</a></h5>
+                  <h5 class="card-title">For Teacher</h5>
                   <p class="card-text">
                     <ul>
                       <li><i class="fa fa-check-circle" aria-hidden="true"></i> Assign Learing</li>
@@ -88,7 +88,7 @@ function Services() {
                   <img src="./assets/images/services-4.PNG" alt="..." />
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title"><a href="">For School administration</a></h5>
+                  <h5 class="card-title">For School administration</h5>
                   <p class="card-text">
                     <ul>
                       <li><i class="fa fa-check-circle" aria-hidden="true"></i> Managing Teacher </li>
@@ -110,7 +110,7 @@ function Services() {
         <div class="container">
           <div class="section-title">
             <h2 data-aos="fade-in">SEPT</h2>
-            <h5 data-aos="fade-in">Swa-adhyayan Entrants' Profiling Test</h5>
+            <h5 data-aos="fade-in">Swa-Adhyayan Entrants' Profiling Test</h5>
           </div>
 
           <div class="row content">
@@ -118,7 +118,7 @@ function Services() {
               <img src="./assets/images/features-2.svg" class="img-fluid" alt="" />
             </div>
             <div class="col-md-7 pt-4" data-aos="fade-left">
-              <h3>The Gateway to Login | Participate in Swa-adhyayan's Unified Learning Management System</h3>
+              <h3>The Gateway to Login | Participate in Swa-Adhyayan's Unified Learning Management System</h3>
               <br></br>
               <p class="font-italic">
                 The Adaptive Digital algorithm starts with a pre-assessment test aimed at judging the current level of skills and knowledge of a student.
@@ -141,7 +141,7 @@ function Services() {
             <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
               <h3>Swa-Learning</h3>
               <br></br>
-              <p class="font-italic">Swa-adhyayan means Self-Learning!</p>
+              <p class="font-italic">Swa-Adhyayan means Self-Learning!</p>
               <p>The most comprehensive and progressive way to learn anywhere you want.</p>
               <p>The biggest interactive learning curriculum with high quality content in the world of K-8 education comprising 10000+ practice questions.</p>
               <p class="card-text">

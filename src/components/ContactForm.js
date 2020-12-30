@@ -10,7 +10,7 @@ const mobileRegex = /(7|8|9)\d{9}/;
 
 const formValid = ({ formErrors, ...rest }) => {
   let valid = true;
-  console.log(Object.values(rest));
+  // console.log(Object.values(rest));
   
   // validate form errors being empty
   Object.values(formErrors).forEach(val => {
@@ -42,6 +42,9 @@ class Contactform extends Component{
         message: ""
       },
       responseData : [],
+      responseLoader : false,
+      responseM : false
+      // responseMessage: null,
     };
   }
 
@@ -49,9 +52,9 @@ class Contactform extends Component{
     e.preventDefault();
     const { name, value } = e.target;
     let formErrors = { ...this.state.formErrors };
-    this.setState({
-      responseData : [],
-    })
+    // this.setState({
+    //   responseData : [],
+    // })
     switch (name) {
       case "fullname":
         formErrors.fullname =
@@ -83,8 +86,12 @@ class Contactform extends Component{
 
   handleSubmit = e => {
     e.preventDefault();
+
     if (formValid(this.state)) {
       // console.log(JSON.stringify(this.state));
+      this.setState({
+        responseLoader : true
+      });
       const postData = {
         fullname : this.state.fullname,
         email : this.state.email,
@@ -92,12 +99,23 @@ class Contactform extends Component{
         message : this.state.message,
       };
       // const options = {
-      //   headers: {'Access-Control-Allow-Origin': 'swaadhyayan.net/swaadhyayan/'}
+      //   headers: {'Access-Control-Allow-Origin': 'http://localhost/swaabackend/'}
       // };
-      axios.post('http://localhost/swabackend/index.php/functions/saveFeedback', postData)
+      axios.post('https://swabackend.foreverbooks.co.in/index.php/api/saveFeedback', postData)
       .then((response) => {
-        this.setState({responseData: response.data});
-        console.log(response.data[0].result);
+        this.setState({
+          responseData: response.data,
+          responseLoader : false,
+          responseM : true
+          // responseMessage : response.data.result  
+        });
+        console.log(response.data.result);
+        // console.log(this.state.responseMessage);
+
+        console.log(this.state.responseData);
+        console.log(this.state.responseData.length);
+        
+        
         this.setState({
           fullname: '',
           mobile: '',
@@ -105,6 +123,11 @@ class Contactform extends Component{
           message: '',
         });
       }, (error) => {
+        this.setState({
+
+          responseLoader : false,
+          responseM : true
+        });
         console.log(error);
       });
     } else {
@@ -127,11 +150,11 @@ class Contactform extends Component{
         </div>
         <div className="col-md-8">
         
-        {this.state.responseData.length > 0 && (  
+        {this.state.responseM &&
           <div className="alert alert-success">
-          {this.state.responseData.map(responseData => <strong>{responseData.message}</strong>)}
+          <strong>{this.state.responseData.message}</strong>
         </div>
-        )}
+        }
         
         <form id="contact-form" onSubmit={this.handleSubmit} method="post">
           <div className="col-md-4">
@@ -176,7 +199,15 @@ class Contactform extends Component{
           </div>
           <div className="col-md-12">
             <div className="gt_contact_us_field">
-              <button id="submit-message" type="submit" name="submit_msg">Submit</button>
+              {
+                this.state.responseLoader == true ? (
+                  <div>
+                    <img alt="loader" src="./assets/images/images/spinner.gif"/>
+                  </div>
+                ) :
+                  <button id="submit-message" type="submit" name="submit_msg">Submit</button>
+              }
+
             </div>
             <div id="contact-result"></div>
           </div>

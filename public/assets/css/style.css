@@ -126,12 +126,13 @@ section{
 	margin-top: 30px;
 }
 #latestnews{
-	background-image: url(http://academic.themescustom.com/theme/image.php/academic/theme/1573546440/announcementsbg);
+	/* background-image: url(http://academic.themescustom.com/theme/image.php/academic/theme/1573546440/announcementsbg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover; */
 	padding-bottom: 70px;
 	padding-top: 2em;
+	background-color: #51504e;
 }
 /*
 	  ==============================================================
@@ -2227,7 +2228,7 @@ ul.gt_blog_meta li i{
 */
 .gt_about_bg{
 	padding-bottom: 120px;
-	background-image: url('../images/background_img.jpg');
+	/* background-image: url('../images/background_img.jpg'); */
 }
 .title{
  	margin-bottom: 25px;
@@ -4442,7 +4443,7 @@ ul.gt_plan_offer_list li a{
 .aboutTeam{
 	margin-top: 30px;
 }
-.servicepage p{
+.servicepage p, .termsPage p, .disclaimerPage p{
 	color: rgb(81, 76, 76);
 }
 

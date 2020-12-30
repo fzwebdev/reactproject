@@ -8,6 +8,8 @@ import Aboutus from './pages/Aboutus';
 import Footer from './components/Footer';
 import Contactus from './pages/Contactus';
 import Services from './pages/Services';
+import Terms from './pages/Terms';
+import Disclaimer from './pages/Disclaimer';
 function App() {
     return ( 
         <BrowserRouter>
@@ -18,6 +20,8 @@ function App() {
                     <Route path="/about-us" component={Aboutus} />
                     <Route path="/services" component={Services} />
                     <Route path="/contact-us" component={Contactus} />
+                    <Route path="/terms-and-conditions" component={Terms} />
+                    <Route path="/disclaimer" component={Disclaimer} />
                 </Switch>
                 <Footer/>
             </div>

@@ -26,14 +26,15 @@ function Footer() {
             <div className="col-md-6">
               <div className="gt_office_wrap default_width">
                 <div className="gt_foo_about widget">
-                  <h5>About Swaadhyayan</h5>
-                  <p style={{color:"white"}}>Swa-adhyayan is the most powerful adaptive and comprehensive E-learning, assessment and sharing platform ever for students to identify their learning style and building their progressive proficiency.</p>
+                  <h5>About Swa-Adhyayan</h5>
+                  <p style={{color:"white"}}>Swa-Adhyayan is the most powerful adaptive and comprehensive E-learning, assessment and sharing platform ever for students to identify their learning style and building their progressive proficiency.</p>
                   <ul>
-                    <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i className="fa fa-google-plus"></i></a></li>
-                    <li><a href="#"><i className="fa fa-pinterest"></i></a></li>
-                    <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.facebook.com/info.swaadhyayan/" target='_blank'><i className="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/swaadhyayan/" target='_blank'><i className="fa fa-twitter"></i></a></li>
+                    {/* <li><a href="#"><i className="fa fa-google-plus"></i></a></li> */}
+                    <li><a href="https://www.instagram.com/swaadhyayan/" target='_blank'><i className="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/swaadhyayan/" target='_blank'><i className="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCdboYQZwOQvTUeehZ0haNyQ" target='_blank'><i className="fa fa-youtube"></i></a></li>
                   </ul>
                 </div>
               </div>
@@ -46,9 +47,9 @@ function Footer() {
                       <h5>Quick Links</h5>
                       <ul className="gt_team1_contact_info">
                         <li> <NavLink to="/about-us" >About Us</NavLink></li>
-                        <li> <NavLink to="/blogs" >Blogs</NavLink> </li>
-                        <li> <NavLink to="/faq" >FaQ</NavLink> </li>
-                        <li><a href="https://foreverbooks.co.in/" target="_blank">Forever Books</a></li>
+                        {/* <li> <NavLink to="/blogs" >Blogs</NavLink> </li> */}
+                        {/* <li> <NavLink to="/faq" >FaQ</NavLink> </li> */}
+                        {/* <li><a href="https://foreverbooks.co.in/" target="_blank">Forever Books</a></li> */}
                       </ul>
                     </div>
                   </div>
@@ -73,7 +74,7 @@ function Footer() {
       <div class="copyright_bg default_width">
         <div class="container">
           <div class="copyright_wrap default_width">
-            <p>&copy; {newDate.toString()} <a href="#">Swaadhyayan</a> &nbsp; All Right Reserved.</p>
+            <p>&copy; {newDate.toString()} <a href="#">Swa-Adhyayan</a> &nbsp; All Right Reserved.</p>
           </div>
         </div>
       </div> 

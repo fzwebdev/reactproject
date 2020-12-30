@@ -202,7 +202,7 @@ function Maincontent() {
         <Offersection posts={offers}/>
         <Homegallery posts={gallery}/>
         <Testimonial posts={testimonial}/>
-        <Newsandblog posts={testimonial}/>
+        {/* <Newsandblog posts={testimonial}/> */}
         <div className="back-to-top">
           <a href="#home"><i className="fa fa-angle-up"></i></a>
         </div>  

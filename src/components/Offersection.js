@@ -22,12 +22,12 @@ function Offersection(props) {
       <div id="latestnews" className="row-fluid mb-5">
       <div className="container-fluid">
       <div className="gt_hdg_1 white_hdg">
-      <h3 className="text-center text-primary">Swa-adhyayan</h3>
+      <h3 className="text-center text-primary">Swa-Adhyayan</h3>
       <p className="text-primary">Adaptive Digital Platform</p>
       </div>
         <div className="col-md-12">
         <div className="gt_testi3_wrap" style={{backgroundColor:'transparent'}}>
-          <p style={{color:'white'}}>Swa-adhyayan is the most powerful adaptive
+          <p style={{color:'white'}}>Swa-Adhyayan is the most powerful adaptive
 and comprehensive E-learning, assessment
 and sharing platform ever for students
 to identify their learning style and building
